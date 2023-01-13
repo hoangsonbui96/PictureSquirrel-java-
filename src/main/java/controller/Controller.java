@@ -34,14 +34,14 @@ public class Controller extends HttpServlet {
 	 */
 	public void init(ServletConfig config) throws ServletException {
 		// TODO Auto-generated method stub
-		try {
-			InitialContext initialContext = new InitialContext();
-			Context env = (Context)initialContext.lookup("java:comp/env");
-			ds = (DataSource)env.lookup("jdbc/webshop");
-		} catch (NamingException e) {
-			// TODO: handle exception
-			throw new ServletException();
-		}
+//		try {
+//			InitialContext initialContext = new InitialContext();
+//			Context env = (Context)initialContext.lookup("java:comp/env");
+//			ds = (DataSource)env.lookup("jdbc/webshop");
+//		} catch (NamingException e) {
+//			// TODO: handle exception
+//			throw new ServletException();
+//		}
 	}
 
 	/**
